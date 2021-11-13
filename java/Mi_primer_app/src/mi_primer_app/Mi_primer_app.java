@@ -5,10 +5,12 @@
  */
 package mi_primer_app;
 
+import accesorios.Auto; /*paquete.clase*/
+
 /**  @author estela */
 public class Mi_primer_app {
      public static void main(String[] args) {
-        int numero;
+        int numero;     /*atributos*/
         String nombre;
         float promedio;
         boolean llueve = true;
@@ -36,9 +38,12 @@ public class Mi_primer_app {
         System.out.println(jugador.mostrarSaludo());
         System.out.println(jugador1.mostrarSaludo());
         System.out.println(jugador2.mostrarSaludo());
-
-    }
+        Auto miAuto = new Auto(60,5,"rojo","deportivo","1999","hsda187"); /*miauto:objeto, agrego valores de los atributos al objeto*/
+        miAuto.setEncendido(true);
+         System.out.println(miAuto.encender_auto());
+        
+      
     
-    
+     } 
     
 }
